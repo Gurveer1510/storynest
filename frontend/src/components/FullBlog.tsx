@@ -30,7 +30,7 @@ function FullBlog({ title, content, publishedDate, authorName }: FullBlogType) {
           </div>
 
           <div className="lg:text-lg p-8 pl-0 text-justify ">
-            <pre>
+            <pre className="text-wrap">
               {parse(content)}
             </pre>
           </div>
