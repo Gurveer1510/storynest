@@ -49,11 +49,11 @@ const BlogsOnProfile: React.FC<BlogsOnProfileProps> = ({
         )
     }
     return (
-        <div className="pb-2 md:pb-4 flex flex-col items-center border-b-2">
-            <div className="px-8 py-4 flex flex-col justify-center items-center ">
+        <div className=" md:pb-4 flex flex-col items-center ">
+            <div className="min-w-full border-b-2 px-8 py-4 flex flex-col justify-center items-center ">
                 { blogs  && blogs?.length > 0 ? (
                     blogs?.map((blog) => (
-                        <div className=" flex">
+                        <div className="min-w-full border-b flex justify-between">
                             <BlogCard
                                 key={blog.id}
                                 id={blog.id}

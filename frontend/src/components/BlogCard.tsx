@@ -26,11 +26,12 @@ function BlogCard({
     month: "short",
     year: "numeric",
   });
+  
   return (
-    <Link to={`/blog/${id}`}>
-      <div className="flex justify-center ">
+    <Link className="" to={`/blog/${id}`}>
+      <div className=" flex justify-center ">
         <div
-          className="w-full border-b-2 border-b-slate-200 mx-5 md:mx-50  pb-2 cursor-pointer my-1 sm:w-screen max-w-screen-lg"
+          className={`w-full mx-5 md:mx-50 pb-2 cursor-pointer my-1 sm:w-screen max-w-screen-lg ${pathname !== '/blogs' ? "" : "border-b-2 border-b-slate-200"}`}
           key={id}
         >
           {authorName && (<div className="font-[20px] flex gap-2 p-2 pb-1 items-center">
