@@ -30,7 +30,7 @@ function BlogCard({
     <Link to={`/blog/${id}`}>
       <div className="flex justify-center ">
         <div
-          className="w-64 border-b-2 border-b-slate-200 mx-5 md:mx-50  pb-2 cursor-pointer my-1 md:w-screen max-w-screen-lg"
+          className="w-full border-b-2 border-b-slate-200 mx-5 md:mx-50  pb-2 cursor-pointer my-1 sm:w-screen max-w-screen-lg"
           key={id}
         >
           {authorName && (<div className="font-[20px] flex gap-2 p-2 pb-1 items-center">
@@ -42,7 +42,7 @@ function BlogCard({
             </div>
           </div>)}
 
-          <div className="text-2xl font-bold tracking-tighter pl-2">
+          <div className="text-xl sm:text-2xl font-bold tracking-tighter pl-2">
             {parse(title)}
           </div>
           { pathname !== "/blogs" && (
