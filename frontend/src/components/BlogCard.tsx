@@ -47,7 +47,7 @@ function BlogCard({
             {parse(title)}
           </div>
           { pathname !== "/blogs" && (
-            <div className="pl-2 float-right">
+            <div className="pl-2 float-right sm:float-left">
               {formattedDate}
             </div>)
           }
